@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project_Full_Stack_Angular13';
+  userName = 'Anthony';
+
+  userMother = {
+    name: 'Marília', lastName:'Isabel'
+  };
+
+  userData = {
+    email: 'anthonymariano@hotmail.com',
+    age: '03 meses'
+  }
+
+  title = 'Front-End Angular 14';
 }

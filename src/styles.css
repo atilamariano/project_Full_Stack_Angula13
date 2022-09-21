@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    padding: 5px;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+.class {
+    border-bottom: 1px solid blueviolet;
+    padding: 2em;
+    margin-bottom: 1em;
+}
