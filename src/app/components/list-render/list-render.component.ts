@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Animal } from 'src/app/Animal';
 import { Car } from 'src/app/Car';
 
+import { ListService } from 'src/app/service/list.service';
+
 @Component({
     selector: 'app-list-render',
     templateUrl: './list-render.component.html',
@@ -24,10 +26,9 @@ export class ListRenderComponent implements OnInit {
     ]
 
     animalDetails = '';
-
     carDetails = '';
 
-    constructor() {}
+    constructor(private listServices: ListService ) {}
 
     ngOnInit(): void {}
 
@@ -38,5 +39,14 @@ export class ListRenderComponent implements OnInit {
     showType(car: Car) {
         this.carDetails = `O carro ${car.model} e do ano ${car.age}`
     }
+
+    removeAnimals(animal: Animal) {
+        console.log('Remove Animal...');
+       this.animals = this.listServices.remove(this.animals, animal);
+    }
+
+    removeCars(car: Car) {
+        console.log('Remove Car...');
+       this.cars = this.listServices.removes(this.cars, car);
 }
- 
+}

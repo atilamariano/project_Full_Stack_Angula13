@@ -1,0 +1,22 @@
+<div class="class">
+    <h2>Tho Way Data Bindign</h2>
+    <form>
+        <input type="text" [(ngModel)]="Nomi" name=" " placeholder="Digite seu nome"/>
+        <input type="submit" value="Enviar"/>
+    </form>
+    <div *ngIf="Nomi">
+        <p>O nome é: {{Nomi}}</p>
+    </div>
+</div>
+
+<div class="class">
+    <h2>Formulário</h2>
+    <form>
+        <input type="text" [(ngModel)]="Usename" name="Usename" 
+        placeholder="Digite seu nome"/>
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="Usename">
+        <h3>Nome do Usuário: {{Usename}}</h3>
+    </div>
+</div>
