@@ -4,6 +4,9 @@ import { Animal } from '../Animal';
 
 import { Car } from '../Car';
 
+import { Film } from '../Films';
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,6 +19,12 @@ export class ListService {
   }
 
   removes(cars: Car[], car: Car) {
-    return cars.filter((c) => car.model !==c.model);
+    return cars.filter((c) => car.model !== c.model);
   }
+
+  removeFilm(films: Film[], film: Film) {
+    return films.filter((f) => film.name !== f.name);
+  }
+
+
 }

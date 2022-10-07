@@ -14,6 +14,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ThoWayBidinComponent } from './components/tho-way-bidin/tho-way-bidin.component';
+import { NewListComponent } from './components/new-list/new-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ThoWayBidinComponent } from './components/tho-way-bidin/tho-way-bidin.c
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
-    ThoWayBidinComponent
+    ThoWayBidinComponent,
+    NewListComponent
   ],
   imports: [
     BrowserModule,

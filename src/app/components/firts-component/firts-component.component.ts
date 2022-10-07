@@ -11,8 +11,8 @@ export class FirtsComponentComponent implements OnInit {
    age = 35;
    hobbies = ['malhar', 'jogar', 'desenhar'];
    car = {
-   name: 'celta',
-   cor: 'azul'
+   name: 'EcoSport',
+   cor: 'Branco'
    }
 
   
