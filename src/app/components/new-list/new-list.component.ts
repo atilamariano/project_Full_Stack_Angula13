@@ -11,15 +11,13 @@ import { ListService } from 'src/app/service/list.service';
 })
 export class NewListComponent implements OnInit {
 
-films: Film [] = [
-  { name: 'Athena', type: 'Drama', age: 2022,  classification: '18 Anos' },
-  { name: 'Free Guy - Assumindo o Controle', type: 'Aventura', age: 2021, classification: 'Livre'},
-  { name: 'Lou', type:'Ação', age: 2022, classification: '14 Anos'}
-]
+films: Film [] = [];
 
 filmDetails = '';
 
-  constructor(private listServices: ListService) { }
+  constructor(private listServices: ListService) { 
+    this.getFilms();
+  }
 
   ngOnInit(): void {
   }
@@ -30,5 +28,9 @@ filmDetails = '';
 
 removeFilms(film: Film) {
   this.films = this.listServices.removeFilm(this.films, film);
+}
+
+getFilms(): void {
+  this.listServices.getAll1().subscribe((films) => (this.films = films));
 }
 }

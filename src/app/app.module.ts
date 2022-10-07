@@ -15,6 +15,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ThoWayBidinComponent } from './components/tho-way-bidin/tho-way-bidin.component';
 import { NewListComponent } from './components/new-list/new-list.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NewListComponent } from './components/new-list/new-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
