@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FirtsComponentComponent } from './components/firts-component/firts-component.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { NewListComponent } from './components/new-list/new-list.component';
+import { ListCarsComponent } from './components/list-cars/list-cars.component';
 
 const routes: Routes = [
     { path: '', component: FirtsComponentComponent },
-    { path: 'list', component: ListRenderComponent },
+    { path: 'animals', component: ListRenderComponent },
+    { path: 'cars', component: ListCarsComponent },
     { path: 'film', component: NewListComponent },
 ];
 

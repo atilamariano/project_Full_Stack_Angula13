@@ -8,16 +8,5 @@
         </li>
     </ul>
 
-    <h3>{{ animalDetails }}</h3>
-
-    <h2>Carros</h2>
-    <ul>
-        <li *ngFor="let car of cars" ><b>Modelo:</b> {{ car.model }} - <b>Ano:</b>{{ car.age }}
-            <button (click)="showType(car)">Show Age</button>
-            <button (click)="removeCars(car)">Excluir</button>
-           
-        </li>
-    </ul>
-
-    <h3>{{ carDetails }}</h3>
+    <h2>{{ animalDetails }}</h2>
 </div>

@@ -15,7 +15,8 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ThoWayBidinComponent } from './components/tho-way-bidin/tho-way-bidin.component';
 import { NewListComponent } from './components/new-list/new-list.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ListCarsComponent } from './components/list-cars/list-cars.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http'
     ListRenderComponent,
     PipesComponent,
     ThoWayBidinComponent,
-    NewListComponent
+    NewListComponent,
+    ListCarsComponent
   ],
   imports: [
     BrowserModule,
