@@ -2,7 +2,7 @@
     <h2>Lista Filmes</h2>
 
     <ul>
-        <li *ngFor="let film of films"><b>Nome: </b>{{ film.name }} - <b>Tipo: </b>{{ film.type }}
+        <li *ngFor="let film of films"><b>Nome: </b><a routerLink="/films/{{ film.id }}">{{ film.name }}</a> - <b>Tipo: </b>{{ film.type }}
             <button (click)="showClassificatio(film)">Clique</button>
             <button (click)="removeFilms(film)">Excluir</button>
         </li>

@@ -27,7 +27,8 @@ filmDetails = '';
 }
 
 removeFilms(film: Film) {
-  this.films = this.listServices.removeFilm(this.films, film);
+  this.films = this.films.filter(f => film.name !== f.name);
+  this.listServices.removeFilm(film.id).subscribe();
 }
 
 getFilms(): void {

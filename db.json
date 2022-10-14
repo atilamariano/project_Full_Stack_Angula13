@@ -1,21 +1,62 @@
 {
-    "animals":[
-        {"id":1, "name":"Leleco","type":"Byrd","age":4},
-        {"id":2, "name":"Lemon","type":"Cat","age":5},
-        {"id":3, "name":"Silene","type":"Dog","age":8},
-        {"id":4, "name":"Herbie","type":"Fish","age":1}
-    ],
-
-    "cars":[
-        {"id":5, "model":"gipe","age":2008},
-        {"id":6, "model":"sand","age":2009},
-        {"id":7, "model":"pineapple","age":2005},
-        {"id":8, "model":"renew","age":2010}
-    ],
-
-    "films":[
-        {"id":9,"name":"Athena","type":"Drama","age":2022,"classification":"18 Anos"},
-        {"id":10,"name":"Free Guy - Assumindo o Controle","type":"Aventura","age":2021,"classification":"Livre"},
-        {"id":11,"name":"Lou","type":"Ação","age":2022,"classification":"14 Anos"}
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Leleco",
+      "type": "Byrd",
+      "age": 4
+    },
+    {
+      "id": 2,
+      "name": "Lemon",
+      "type": "Cat",
+      "age": 5
+    },
+    {
+      "id": 4,
+      "name": "Herbie",
+      "type": "Fish",
+      "age": 1
+    }
+  ],
+  "cars": [
+    {
+      "id": 5,
+      "model": "gipe",
+      "age": 2008
+    },
+    {
+      "id": 6,
+      "model": "sand",
+      "age": 2009
+    },
+    {
+      "id": 8,
+      "model": "renew",
+      "age": 2010
+    }
+  ],
+  "films": [
+    {
+      "id": 9,
+      "name": "Athena",
+      "type": "Drama",
+      "age": 2022,
+      "classification": "18 Anos"
+    },
+    {
+      "id": 10,
+      "name": "Free Guy - Assumindo o Controle",
+      "type": "Aventura",
+      "age": 2021,
+      "classification": "Livre"
+    },
+    {
+      "id": 11,
+      "name": "Lou",
+      "type": "Ação",
+      "age": 2022,
+      "classification": "14 Anos"
+    }
+  ]
 }

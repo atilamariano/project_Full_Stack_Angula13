@@ -12,10 +12,8 @@ export class ListRenderComponent implements OnInit {
 
     animalDetails = '';
    
-
     constructor(private listServices: ListService ) {
         this.getAnimals();
-       
     }
 
     ngOnInit(): void {}
@@ -24,19 +22,13 @@ export class ListRenderComponent implements OnInit {
         this.animalDetails = `O Pet ${animal.name} tem ${animal.age} anos`;
     }
 
-    
-
     removeAnimals(animal: Animal) {
-        console.log('Remove Animal...');
-       this.animals = this.listServices.remove(this.animals, animal);
+        this.animals = this.animals.filter(a => animal.name !== a.name);
+        this.listServices.remove(animal.id).subscribe();
     }
-
-    
 
     getAnimals(): void {
         this.listServices.getAll().subscribe((animals) => (this.animals = animals));
     }
 
-
-    
 }

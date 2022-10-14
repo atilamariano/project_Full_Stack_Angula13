@@ -2,7 +2,7 @@
 
     <h2>Carros</h2>
     <ul>
-        <li *ngFor="let car of cars" ><b>Modelo:</b> {{ car.model }} - <b>Ano:</b>{{ car.age }}
+        <li *ngFor="let car of cars" ><b>ID: </b>{{ car.id }} - <b>Modelo:</b> <a routerLink="/cars/{{ car.id }}">{{ car.model }}</a> - <b>Ano:</b>{{ car.age }}
             <button (click)="showType(car)">Show Age</button>
             <button (click)="removeCars(car)">Excluir</button>
            

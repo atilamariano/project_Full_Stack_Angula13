@@ -16,7 +16,9 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { ThoWayBidinComponent } from './components/tho-way-bidin/tho-way-bidin.component';
 import { NewListComponent } from './components/new-list/new-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ListCarsComponent } from './components/list-cars/list-cars.component'
+import { ListCarsComponent } from './components/list-cars/list-cars.component';
+import { ItemDatailComponent } from './components/item-datail/item-datail.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ListCarsComponent } from './components/list-cars/list-cars.component'
     PipesComponent,
     ThoWayBidinComponent,
     NewListComponent,
-    ListCarsComponent
+    ListCarsComponent,
+    ItemDatailComponent,
   ],
   imports: [
     BrowserModule,

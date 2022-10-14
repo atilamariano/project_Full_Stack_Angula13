@@ -13,6 +13,6 @@ export class EventsComponent implements OnInit {
     ngOnInit(): void {}
 
     showMensage(): void {
-        this.show = !this.show; // toggle = troca de estado para não ter que gasta mais de uma linha , troca para o aposto que esta no moneto do evnto clique
+        this.show = !this.show; // toggle = troca de estado para não ter que gasta mais de uma linha , troca para o aposto que esta no moneto do evento clique.
     }
 }

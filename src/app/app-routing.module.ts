@@ -5,12 +5,16 @@ import { FirtsComponentComponent } from './components/firts-component/firts-comp
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { NewListComponent } from './components/new-list/new-list.component';
 import { ListCarsComponent } from './components/list-cars/list-cars.component';
+import { ItemDatailComponent } from './components/item-datail/item-datail.component';
 
 const routes: Routes = [
     { path: '', component: FirtsComponentComponent },
     { path: 'animals', component: ListRenderComponent },
     { path: 'cars', component: ListCarsComponent },
-    { path: 'film', component: NewListComponent },
+    { path: 'films', component: NewListComponent },
+    { path: 'animals/:id', component:ItemDatailComponent },
+    { path: 'films/:id', component:ItemDatailComponent },
+    { path: 'cars/:id', component:ItemDatailComponent },
 ];
 
 @NgModule({
